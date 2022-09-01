@@ -13,8 +13,11 @@
   );
   --primary-btn-color: #e50914;
   --plain-white: #fff;
+  --plain-black: #000;
 
   --primary-hover-color: #f40612;
+
+  --border-color: #222;
 }
 
 html {
@@ -71,22 +74,26 @@ h6 {
   line-height: 1.6rem;
 }
 
-.main-title-big {
+.main-title-large {
   font-size: 5.6rem;
   font-weight: 600;
 }
 
 @media (max-width: 1024px) {
-  .main-title-big {
+  .main-title-large {
     font-size: 4.8rem;
   }
 }
 
 @media (max-width: 575px) {
-  .main-title-big {
+  .main-title-large {
     font-size: 2.4rem;
     line-height: 3.2rem;
   }
+}
+
+.main-title-big {
+  font-size: 4.8rem;
 }
 
 .main-title-medium {
@@ -188,6 +195,16 @@ h6 {
   background-image: var(--overlay-color);
 }
 
+.story-card {
+  border-bottom: 8px solid var(--border-color);
+}
+
+section.story-card {
+  padding: 7.2rem 0;
+  background-color: var(--plain-black);
+  color: var(--plain-white);
+}
+
 .hero {
   position: relative;
   background: url("../assets/img/background.jpg") no-repeat center/cover;
@@ -256,4 +273,12 @@ nav img {
   .form-submit {
     flex-direction: column;
   }
+}
+
+.story-card-visual {
+  position: relative;
+}
+
+.story-card-visual img {
+  width: 100%;
 }
